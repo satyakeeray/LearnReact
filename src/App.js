@@ -42,7 +42,7 @@ export default function App() {
       <header>
         <h1>Learning React JS</h1>
       </header>
-      {/* This is example of simple component. */}
+      {/* This is an example of simple component. */}
       <Navbar />
 
       <section id="section1">
@@ -50,7 +50,7 @@ export default function App() {
         <p>a = 10;</p>
         <p>b = 20;</p>
         <p> c = a + b;</p>
-        {/* This is example of displying the values of variables. */}
+        {/* This is an example of displying the values of variables. */}
         <p>
           The addition of {a} amd {b} is: {c}.
         </p>
@@ -60,7 +60,7 @@ export default function App() {
         <h2>Array Operation Example</h2>
         <p>user = ['user1', 'user2', 'user3', 'user4', 'user5']</p>
         <ul>
-          {/* This is example rendering each element of array in HTML. */}
+          {/* This is an example of rendering each element of array in HTML. */}
           {user.map((user) => {
             return <li>{user}</li>;
           })}
@@ -69,7 +69,7 @@ export default function App() {
 
       <section id="section3">
         <h2>Conditional Rendering Example</h2>
-        {/* This is example conditional rendering. */}
+        {/* This is an example of conditional rendering. */}
         <p>
           The number {number} is a
           {number % 2 == 0 ? <span> Even </span> : <span> Odd </span>}
@@ -79,7 +79,7 @@ export default function App() {
 
       <section id="section4">
         <h2>Event Handling</h2>
-        {/* This is example event handling. */}
+        {/* This is an example of event handling. */}
         <p>
           <button onClick={btnClick}>Click Here</button>
         </p>
@@ -90,14 +90,14 @@ export default function App() {
 
       <section id="section5">
         <h2>Event Handling With useState</h2>
-        {/* This is example event handling with useState. */}
+        {/* This is an example of event handling with useState. */}
         <p>{num}</p>
         <button onClick={inCreaseNumber}>Increase Number</button>
       </section>
 
       <section id="section6">
         <h2>Pass The Data Using Props To Other Component</h2>
-        {/* This is example passing of data using props to the other component. */}
+        {/* This is an example of passing of data using props to the other component. */}
         <button onClick={increment}>Increment Number</button>
         <button onClick={decrement}>Decrement Number</button>
         <CardComponent number={specialNumber} />
