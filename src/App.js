@@ -51,7 +51,7 @@ export default function App() {
         <h2>Number Operations Example</h2>
         <p>a = 10;</p>
         <p>b = 20;</p>
-        <p> c = a + b;</p>
+        <p>c = a + b;</p>
         {/* This is an example of displying the values of variables. */}
         <p>
           The addition of {a} amd {b} is: {c}.
