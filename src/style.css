@@ -29,3 +29,19 @@ footer {
   text-align: center;
   padding: 1em;
 }
+p span {
+  font-size: 15px;
+}
+.card-style {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  margin: 20px;
+}
+
+.number-style {
+  font-size: 48px;
+  margin: 0;
+}

@@ -18,6 +18,9 @@ const Navbar = () => {
         <li>
           <a href="#section5">Event Handling With useState</a>
         </li>
+        <li>
+          <a href="#section6">Pass The Data Using Props</a>
+        </li>
       </ul>
     </nav>
   );
