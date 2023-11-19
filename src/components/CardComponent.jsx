@@ -4,7 +4,7 @@ const CardComponent = ({ number }) => {
   return (
     <div className="card-style" >
       <p className="number-style">{number}</p>
-      <span>This box is a different component</span>
+      <span>Here we recives the updated number shows on this component</span>
     </div>
   );
 };

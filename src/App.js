@@ -98,6 +98,8 @@ export default function App() {
       <section id="section6">
         <h2>Pass The Data Using Props To Other Component</h2>
         {/* This is an example of passing of data using props to the other component. */}
+        <p>This following number is increasing/decresing depending on the clicking on button and updated number is passed to <strong>CardComponent</strong></p>
+        <p>Updated Number: {specialNumber}</p>
         <button onClick={increment}>Increment Number</button>
         <button onClick={decrement}>Decrement Number</button>
         <CardComponent number={specialNumber} />
