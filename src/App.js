@@ -16,20 +16,33 @@ export default function App() {
       <Navbar />
 
       <section id="section1">
-        <h2>Number Operations</h2>
+        <h2>Number Operations Example</h2>
         <p>a = 10;</p>
         <p>b = 20;</p>
         <p> c = a + b;</p>
+        {/* This is example of displying the values of variables. */}
         <p>The addition of {a} amd {b} is: {c}.</p>
       </section>
 
       <section id="section2">
-        <h2>Section 2</h2>
-        <p>This is the content of Section 2.</p>
+        <h2>Array Operation Example</h2>
+        <p>user = ['user1', 'user2', 'user3', 'user4', 'user5']</p>
+        <ul>
+        {/* This is example rendering each element of array in HTML. */}
+        {
+          user.map(
+            (user) => {
+              return (
+                <li>{user}</li>
+              ) 
+            }
+          )
+        }
+      </ul>
       </section>
 
       <section id="section3">
-        <h2>Section 3</h2>
+        <h2>Conditional Rendering Example</h2>
         <p>This is the content of Section 3.</p>
       </section>
 
