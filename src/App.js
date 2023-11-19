@@ -37,6 +37,8 @@ export default function App() {
     setSpecialNumber(specialNumber - 1);
   };
 
+  const setNumber = 0;
+
   return (
     <div>
       <header>
@@ -104,7 +106,7 @@ export default function App() {
         <button onClick={decrement}>Decrement Number</button>
         <CardComponent number={specialNumber} />
       </section>
-
+      
       <footer>
         <p>By: Satyakee Ray</p>
       </footer>
