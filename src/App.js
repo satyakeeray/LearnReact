@@ -3,6 +3,7 @@ import { useState } from 'react';
 import './style.css';
 import Navbar from './components/Navbar';
 import CardComponent from './components/CardComponent';
+import {useRef} from 'react';
 
 export default function App() {
   /* Example for number operations */
@@ -35,10 +36,18 @@ export default function App() {
   };
   const decrement = () => {
     setSpecialNumber(specialNumber - 1);
-  };
+  };  
 
   const setNumber = 0;
 
+  const inputRef = useRef(null);
+  const [arrayData, setArrayData] = useState([]);
+  const displayTextFromTextbox = () => {
+    console.log(inputRef.current.value);
+  }
+  const addTexts = () => {
+    setArrayData([...arrayData,inputRef.current.value]);
+  }
   return (
     <div>
       <header>
@@ -105,6 +114,21 @@ export default function App() {
         <button onClick={increment}>Increment Number</button>
         <button onClick={decrement}>Decrement Number</button>
         <CardComponent number={specialNumber} />
+      </section>
+      
+      <section id="section7">
+        <h2>React useRef hooks</h2>
+        {/* This is an example of passing of data using props to the other component. */}
+          <input type="text" ref={inputRef}/>
+          <button onClick={displayTextFromTextbox}>Submit</button>
+          <button onClick={addTexts}>Add Text</button>
+          {
+            arrayData.map((item, index) => {
+              return (
+                <h2 key={index}>{item}</h2>
+              );
+            })
+          }
       </section>
       
       <footer>

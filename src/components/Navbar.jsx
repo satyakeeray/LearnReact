@@ -21,6 +21,9 @@ const Navbar = () => {
         <li>
           <a href="#section6">Pass The Data Using Props To Other Component</a>
         </li>
+        <li>
+          <a href="#section7">React useRef hooks</a>
+        </li>
       </ul>
     </nav>
   );
