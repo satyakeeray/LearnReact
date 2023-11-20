@@ -47,6 +47,7 @@ export default function App() {
   }
   const addTexts = () => {
     setArrayData([...arrayData,inputRef.current.value]);
+    inputRef.current.value = '';
   }
   return (
     <div>
