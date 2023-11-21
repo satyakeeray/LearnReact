@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 const Navbar = () => {
   return (
     <nav>
@@ -23,6 +24,9 @@ const Navbar = () => {
         </li>
         <li>
           <a href="#section7">React useRef hooks</a>
+        </li>
+        <li>
+          <a href="/prjects">React Projects</a>
         </li>
       </ul>
     </nav>
